@@ -1,5 +1,6 @@
 import React from 'react';
-import Typical from 'react-typical';
+import Typewriter from 'typewriter-effect';
+
 import Profile from '../assets/profile.jpg';
 
 const Home = () => {
@@ -10,17 +11,22 @@ const Home = () => {
       <div className="flex flex-col-reverse   lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-12">
         {/* Text Section */}
         <div className="  my-5 lg:mt-0 lg:space-y-4 tracking-wider text-center lg:text-left">
-          <h2 className="font-bold text-xl lg:text-3xl">Hello, I'm</h2>
-          <h1 className="font-bold text-3xl lg:text-6xl">Alok</h1>
-          <h2 className="font-bold text-xl lg:text-3xl">
-            And I'm a,{' '}
-            <Typical
-              className="text-green-500"
-              steps={['Full Stack Developer', 2000, 'Frontend Developer', 2000, 'Backend Developer', 2000]}
-              loop={Infinity}
-              wrapper="span"
-            />
-          </h2>
+        <h2 className="font-bold text-xl lg:text-3xl">Hello, I'm</h2>
+<h1 className="font-bold text-3xl lg:text-6xl">Alok</h1>
+<h2 className="font-bold text-xl lg:text-3xl">
+  And I'm a,{' '}
+  <Typewriter
+ 
+    options={{
+      strings: ['Full Stack Developer', 'Frontend Developer', 'Backend Developer'],
+      autoStart: true,
+      loop: true,
+      delay: 75,
+    }}
+ 
+  />
+</h2>
+
           <p className="w-full lg:w-3/4 pt-2 text-xs lg:text-sm">
             Committed to creating and enhancing engaging digital experiences. Technically skilled and an analytical thinker with a results-driven mindset.
           </p>
