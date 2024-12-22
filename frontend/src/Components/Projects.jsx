@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Recipe from '../assets/Recipe.png'
-import Todo from '../assets/todo.png'
-import Drumkit from '../assets/Drumkit.png'
+import Todo from '../assets/Todo.png'
+import Drumkit from '../assets/drumkit.png'
 const Projects = () => {
     const MainProjects = [{
         title: "Recipe Finder App",
