@@ -12,9 +12,7 @@ app.use(bodyParser.json());
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://alok08996:011cOjJEtX1gdLd3@formdata.uo236.mongodb.net/formData', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-
+    
 })
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
