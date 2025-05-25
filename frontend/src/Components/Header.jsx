@@ -5,7 +5,7 @@ const Header = () => {
 const[isMenuOpen, setIsMenuOpen]= useState(false)
   return (
     <header>
-      <nav role='navigation' aria-label='Main Navigation' className="flex justify-between items-center px-5 lg:px-36  border-b border-green-500 fixed top-0 w-full z-10 bg-green-950 h-14 md:h-14 lg:h-16">
+      <nav role='navigation' aria-label='Main Navigation' className="flex justify-between items-center px-5 lg:px-36  border-b border-green-500 fixed top-0 w-full z-50 bg-green-950 h-14 md:h-14 lg:h-16">
         {/* Logo */}
         <div className="text-xl lg:text-2xl font-bold">My Portfolio</div>
 

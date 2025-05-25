@@ -6,20 +6,30 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        liquid: {
-          '0%': { clipPath: 'circle(50% at 50% 50%)' }, // Start as a circle
-          '25%': { clipPath: 'ellipse(60% 40% at 50% 50%)' }, // Stretch horizontally
-          '50%': { clipPath: 'ellipse(50% 60% at 50% 50%)' }, // Stretch vertically
-          '75%': { clipPath: 'ellipse(40% 50% at 50% 50%)' }, // Back to a similar size
-          '100%': { clipPath: 'circle(50% at 50% 50%)' }, // End in circle
-        },
-      },
       animation: {
-        liquid: 'liquid 8s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+        'spin-right': 'spin-right 6s linear infinite',
+        'spin-left': 'spin-left 6s linear infinite',
+        'liquid': 'liquid 8s ease-in-out infinite',
+      },
+      keyframes: {
+        'spin-right': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'spin-left': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
+        liquid: {
+          '0%': { clipPath: 'circle(50% at 50% 50%)' },
+          '25%': { clipPath: 'ellipse(60% 40% at 50% 50%)' },
+          '50%': { clipPath: 'ellipse(50% 60% at 50% 50%)' },
+          '75%': { clipPath: 'ellipse(40% 50% at 50% 50%)' },
+          '100%': { clipPath: 'circle(50% at 50% 50%)' },
+        },
       },
     },
   },
   plugins: [],
 }
-

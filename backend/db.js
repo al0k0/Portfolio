@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://alok08996:011cOjJEtX1gdLd3@formdata.uo236.mongodb.net/formData', {
+mongoose.connect('mongodb+srv://alok08996:alok123@portfolio.heyqmtq.mongodb.net/', {
     
 })
     .then(() => console.log('Connected to MongoDB'))

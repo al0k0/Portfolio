@@ -1,53 +1,67 @@
-import React from 'react'
-import AboutImg from '../assets/aboutImg.jpg'
+import React from 'react';
+import AboutImg from '../assets/aboutImg.jpeg';
+import ProfileImg from '../assets/profile.png';
 
 const About = () => {
   return (
-    <div id='about' className='bg-green-900 md:px-10  lg:px-36 px-2 '>
+    <div className='bg-green-900 text-white'>
+      {/* Header Section */}
+      <div className='relative py-8 lg:py-12 flex flex-col items-center text-center'>
+        <h1 className='text-lg sm:text-xl lg:text-3xl text-green-400 font-bold z-10 absolute bottom-11'>About Me</h1>
+        <h1 className='text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-stroke tracking-wider uppercase font-extrabold'>About</h1>
+      </div>
 
-     <div className="flex items-center justify-center pt-2 lg:pt-12">
-  {/* Smaller text above */}
-  <h2 className="  absolute text-xl md:text-2xl lg:text-3xl font-bold text-green-500 uppercase tracking-wide">
-    About Me
-  </h2>
-
-  {/* Main "About" text */}
-  <h1 className=" text-5xl md:text-7xl lg:text-9xl font-extrabold text-stroke">
-  ABOUT
-</h1>
-
-</div>
-
-
-        <div className=' flex flex-col lg:flex-row items-center pt-12 pb-4 space-y-3 lg:space-y-0 justify-center space-x-6  lg:text-left lg:space-x-24 '>
-      
-           <img src={AboutImg} alt='' className=' border border-gray-400 rounded-3xl w-40 md:w-48 lg:w-72 ' />
-      
-
-        <div className='space-y-4 lg:space-y-8 text-left '>
-        <h1 className='text-2xl text-center lg:text-3xl font-bold '>Full Stack <span className='text-green-500'>Developer!</span></h1>
-        <p className='lg:tracking-wider lg:leading-relaxed w-full  text-sm lg:text-base'>I am Alok, a Fullstack Developer skilled in React.js, Node.js, MongoDB, and modern UI frameworks like Tailwind CSS and Bootstrap.</p>
-        <p className='lg:tracking-wider lg:leading-relaxed   text-sm lg:text-base'>I specialize in creating responsive, user-centric web applications with seamless functionality and engaging designs. Proficient in Git, I ensure efficient version control and collaborative workflows. My focus lies in crafting scalable APIs, managing databases, and deploying impactful applications. Passionate about problem-solving and continuous learning, I strive to stay at the forefront of web development.</p>
-        <div className='flex items-center justify-center gap-4 '>
-          <h2 className='text-green-500 text-lg md:text-xl lg:text-xl font-semibold'>Teckstack ||</h2>
-          <i class="fa-brands fa-html5 text-2xl md:text-3xl lg:text-5xl text-[#dd4b24]"></i>
-          <i class="fa-brands fa-css3-alt text-2xl md:text-3xl lg:text-5xl text-[#316af0]"></i>
-     
-          <i class="fa-brands fa-react text-2xl md:text-3xl lg:text-5xl text-[#00d2f6]"></i>
-          <i class="fa-brands fa-node-js text-2xl md:text-3xl lg:text-5xl text-[#5a9d55]"></i>
-          <img
-    src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
-    alt="MongoDB"
-    className="w-7 h-7 md:w-9 md:h-9 lg:w-12 lg:h-12
-    "
-  />
-        </div>
-        </div>  
+      {/* Main Section */}
+      <section id="about" className="flex flex-col lg:flex-row items-center gap-20 px-4 sm:px-8 lg:px-32 py-16 sm:py-20">
         
-        </div>
-        
-        </div>
-  )
-}
+        {/* Image Section */}
+        <div className="relative">
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={AboutImg}
+              alt="About"
+              className="w-[280px] sm:w-[320px] md:w-[400px] lg:w-[500px] rounded-2xl"
+            />
+          </div>
 
-export default About
+          {/* Floating circle image */}
+          <div className="circle absolute -bottom-8 left-1/2 transform -translate-x-1/2  lg:bottom-[60px] lg:left-[500px]">
+            <div className="about-img">
+              <img src={ProfileImg} alt="Profile" />
+            </div>
+          </div>
+        </div>
+
+        {/* Text Section */}
+        <div className="max-w-xl space-y-4 text-center lg:text-left px-2 sm:px-4">
+          <h3 className="text-3xl sm:text-4xl md:text-4xl lg:font-bold uppercase">
+            FullStack <span className="text-green-400">Developer!</span>
+          </h3>
+
+          <p className="text-sm sm:text-base">
+            I am Alok, a passionate Fullstack developer on a journey to build seamless and user-friendly digital experiences using the MERN stack.
+          </p>
+
+          <p className="text-sm sm:text-base">
+            I create engaging, responsive web applications by blending creativity with functionality. My focus is on delivering intuitive user experiences. I constantly stay updated with the latest web technologies. By following best practices, I ensure efficient and scalable solutions. I am passionate about building applications that meet user needs. My goal is to craft seamless, high-performance websites that provide real value.
+          </p>
+
+          <div className="flex items-center justify-center lg:justify-end gap-4 flex-wrap pt-2 text-green-400 text-lg font-semibold">
+            <span>Techstack ||</span>
+            <i className="fa-brands fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
+            <i className="fa-brands fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
+            <i className="fa-brands fa-react text-cyan-400 text-3xl sm:text-4xl"></i>
+            <i className="fa-brands fa-node-js text-green-600 text-3xl sm:text-4xl"></i>
+            <img
+              src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+              alt="MongoDB"
+              className="w-8 sm:w-10"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
