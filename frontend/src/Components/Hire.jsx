@@ -21,7 +21,7 @@ const Hire = () => {
     }
 
     try {
-      const response = await fetch('https://portfolio-ne2s.onrender.com/submit-form', {
+      const response = await fetch('http://localhost:5000/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -29,6 +29,13 @@ const Hire = () => {
       const result = await response.json();
       alert(result.message);
       console.log('response', result);
+       
+      setFormData({
+        name: '',
+    email: '',
+    mobile: '',
+    subject: '',
+      });
     } catch (error) {
       console.error('error submitting form:', error);
     }
