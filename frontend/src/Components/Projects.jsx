@@ -2,8 +2,18 @@ import React, { useState } from 'react'
 import Recipe from '../assets/Recipe.png'
 import Todo from '../assets/Todo.png'
 import Drumkit from '../assets/drumkit.png'
+import Zivaa from '../assets/zivaaa.png'
 const Projects = () => {
     const MainProjects = [{
+  title: "Women Fashion E-Commerce",
+  Description: "A dynamic e-commerce platform for women’s fashion. Includes product catalog, cart and wishlist management, order tracking, and a responsive user interface.",
+  technologies: ["React.js", "Tailwind CSS", "MongoDB", "Express.js", "Node.js", "React Router"],
+  img: Zivaa, // 
+  link: "https://zivaaa.netlify.app/", // 
+},
+      
+      
+      {
         title: "Recipe Finder App",
         Description: "A React-based application for searching and exploring meal recipes. Features category filtering, meal details, and an intuitive UI.",
         technologies: ["React.js", "Tailwind CSS", "Fetch API", " JavaScript (ES6)", "React ROuter"],
