@@ -56,7 +56,7 @@ const Home = () => {
           <img
             src={Profile}
             alt="Alok's profile picture"
-            className="rounded-full object-cover w-full h-full border-4 border-green-900 z-10"
+            className="rounded-full  object-cover w-full h-full border-4 border-green-900 z-10"
           />
         </div>
       </div>
