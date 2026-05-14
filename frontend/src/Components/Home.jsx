@@ -15,7 +15,13 @@ const Home = () => {
             And I'm a{' '}
             <Typewriter
               options={{
-                strings: ['Full Stack Developer', 'Frontend Developer', 'Backend Developer'],
+                strings: [
+                  'Full Stack Developer',
+                  'MERN Stack Developer',
+                  'Generative AI Builder',
+                  'AI Automation Engineer',
+                  'Backend Developer',
+                ],
                 autoStart: true,
                 loop: true,
                 delay: 75,
@@ -24,7 +30,7 @@ const Home = () => {
           </h2>
 
           <p className="w-full font-semibold lg:w-3/4 pt-2 text-xs md:text-sm lg:text-sm">
-            Committed to creating and enhancing engaging digital experiences. Technically skilled and an analytical thinker with a results-driven mindset.
+            I build full stack web applications and AI-powered automation systems. From MERN stack apps to Generative AI integrations — I turn ideas into real, deployed products.
           </p>
 
           {/* Social Icons */}
@@ -38,7 +44,7 @@ const Home = () => {
               href="#contact"
               className="inline-block border border-green-400 cursor-pointer relative overflow-hidden text-white bg-transparent font-bold py-2 px-4 rounded-md transition-all duration-500 ease-in-out group"
             >
-              <span className="relative z-10 text-sm lg:text-base ">
+              <span className="relative z-10 text-sm lg:text-base">
                 HIRE ME <i className="lg:fa-solid fa-arrow-right"></i>
               </span>
               <span className="absolute top-0 left-0 w-full lg:w-12 h-full bg-green-500 transform transition-all duration-500 group-hover:w-full ease-in-out lg:group-hover:bg-green-700"></span>
@@ -50,13 +56,13 @@ const Home = () => {
         <div className="relative flex items-center justify-center w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 animate-bounce-slow">
 
           {/* Bubble Animated Background */}
-          <div className="absolute w-full h-full rounded-full opacity-60 animate-bubble z-0"></div> 
+          <div className="absolute w-full h-full rounded-full opacity-60 animate-bubble z-0"></div>
 
           {/* Image */}
           <img
             src={Profile}
             alt="Alok's profile picture"
-            className="rounded-full  object-cover w-full h-full border-4 border-green-900 z-10"
+            className="rounded-full object-cover w-full h-full border-4 border-green-900 z-10"
           />
         </div>
       </div>

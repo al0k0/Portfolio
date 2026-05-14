@@ -13,7 +13,7 @@ const About = () => {
 
       {/* Main Section */}
       <section id="about" className="flex flex-col lg:flex-row items-center gap-20 px-4 sm:px-8 lg:px-32 py-16 sm:py-20">
-        
+
         {/* Image Section */}
         <div className="relative">
           <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -25,7 +25,7 @@ const About = () => {
           </div>
 
           {/* Floating circle image */}
-          <div className="circle absolute -bottom-8 left-1/2 transform -translate-x-1/2  lg:bottom-[60px] lg:left-[500px]">
+          <div className="circle absolute -bottom-8 left-1/2 transform -translate-x-1/2 lg:bottom-[60px] lg:left-[500px]">
             <div className="about-img">
               <img src={ProfileImg} alt="Profile" />
             </div>
@@ -35,15 +35,16 @@ const About = () => {
         {/* Text Section */}
         <div className="max-w-xl space-y-4 text-center lg:text-left px-2 sm:px-4">
           <h3 className="text-3xl sm:text-4xl md:text-4xl lg:font-bold uppercase">
-            FullStack <span className="text-green-400">Developer!</span>
+            FullStack <span className="text-green-400">Developer</span> &
+            Generative<span className="text-green-400"> AI</span>
           </h3>
 
           <p className="text-sm sm:text-base">
-            I am Alok, a passionate Fullstack developer on a journey to build seamless and user-friendly digital experiences using the MERN stack.
+            I am Alok, a Full Stack Developer and AI enthusiast passionate about building real-world applications that solve actual problems — not just tutorial projects.
           </p>
 
           <p className="text-sm sm:text-base">
-            I create engaging, responsive web applications by blending creativity with functionality. My focus is on delivering intuitive user experiences. I constantly stay updated with the latest web technologies. By following best practices, I ensure efficient and scalable solutions. I am passionate about building applications that meet user needs. My goal is to craft seamless, high-performance websites that provide real value.
+            I specialize in the MERN stack and Generative AI integration. I have built and deployed production-level projects including an AI-powered WhatsApp and Email automation system managing 200+ leads, a cricket live score Telegram bot that generates contextual memes using OpenAI, and a full stack e-commerce platform. I work with JavaScript, Python, React.js, Node.js, MongoDB, and AI APIs like OpenAI and Groq to build intelligent, automated, and high-performance applications.
           </p>
 
           <div className="flex items-center justify-center lg:justify-end gap-4 flex-wrap pt-2 text-green-400 text-lg font-semibold">
@@ -52,6 +53,7 @@ const About = () => {
             <i className="fa-brands fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
             <i className="fa-brands fa-react text-cyan-400 text-3xl sm:text-4xl"></i>
             <i className="fa-brands fa-node-js text-green-600 text-3xl sm:text-4xl"></i>
+            <i className="fa-brands fa-python text-yellow-400 text-3xl sm:text-4xl"></i>
             <img
               src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
               alt="MongoDB"

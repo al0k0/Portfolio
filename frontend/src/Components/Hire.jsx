@@ -35,16 +35,26 @@ const Hire = () => {
   };
 
   return (
-    <div id="contact" className="bg-green-900 pt-20 px-5 lg:px-36">
+    <div id="contact" className="bg-green-900 pt-20 px-5 lg:px-36 pb-16">
       <div className="text-center space-y-6">
-        <h1 className="font-bold text-2xl lg:text-4xl text-green-500">Ready to Collaborate?</h1>
+        <h1 className="font-bold text-2xl lg:text-4xl text-green-500">Let's Build Something Together</h1>
         <p className="text-sm lg:text-lg text-gray-400">
-          Let's build something amazing together. Whether you have a project in mind or just want to discuss ideas, feel free to get in touch.
+          Whether you need a full stack web app, an AI-powered automation system, or just want to discuss an idea — I'm available. Let's talk.
         </p>
+
+        {/* Quick contact info */}
+        <div className="flex justify-center gap-6 flex-wrap text-sm text-gray-300 pt-2">
+          <span><i className="fa-solid fa-envelope text-green-400 mr-2"></i>alok08996@gmail.com</span>
+          <a href="https://linkedin.com/in/alok-sonig" target="_blank" rel="noreferrer" className="text-green-400 hover:underline">
+            <i className="fa-brands fa-linkedin mr-2"></i>LinkedIn
+          </a>
+          <a href="https://github.com/al0k0" target="_blank" rel="noreferrer" className="text-green-400 hover:underline">
+            <i className="fa-brands fa-github mr-2"></i>GitHub
+          </a>
+        </div>
       </div>
 
       <form
-        action=""
         onSubmit={handleSubmit}
         className="flex flex-col items-center gap-6 lg:gap-8 pt-8 pb-4 w-full lg:max-w-3xl mx-auto"
       >
@@ -53,7 +63,7 @@ const Hire = () => {
           onChange={handleInputChange}
           value={formData.name}
           name="name"
-          placeholder="Enter your name"
+          placeholder="Your Name"
           className="w-full py-2 px-4 bg-green-800 focus:bg-green-950 outline-none rounded-md text-gray-200"
           required
         />
@@ -62,7 +72,7 @@ const Hire = () => {
           onChange={handleInputChange}
           value={formData.email}
           name="email"
-          placeholder="Enter your Email"
+          placeholder="Your Email"
           className="w-full py-2 px-4 bg-green-800 focus:bg-green-950 outline-none rounded-md text-gray-200"
           required
         />
@@ -71,7 +81,7 @@ const Hire = () => {
           onChange={handleInputChange}
           value={formData.mobile}
           name="mobile"
-          placeholder="Enter your Mobile Number"
+          placeholder="Your Mobile Number"
           className="w-full py-2 px-4 bg-green-800 focus:bg-green-950 outline-none rounded-md text-gray-200"
           required
         />
@@ -80,7 +90,7 @@ const Hire = () => {
           onChange={handleInputChange}
           value={formData.subject}
           name="subject"
-          placeholder="Enter your Subject"
+          placeholder="What do you need? (e.g. Web App, AI Bot, Bug Fix)"
           className="w-full py-2 px-4 bg-green-800 focus:bg-green-950 outline-none rounded-md text-gray-200"
           required
         />
@@ -89,7 +99,7 @@ const Hire = () => {
           type="submit"
           className="py-2 px-5 lg:py-3 lg:px-8 bg-green-950 rounded-full shadow-[0_0_12px_rgba(34,197,94,0.7)] hover:bg-green-500 hover:text-black duration-300 text-gray-200"
         >
-          Submit
+          Send Message
         </button>
       </form>
     </div>
